@@ -9,6 +9,7 @@ image: /assets/images/posts/random-img.jpg
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 Example with image:
+![image](/assets/images/posts/random-img.jpg)
 
 ![Error](@@baseUrl@@/assets/images/posts/error.png)
 
