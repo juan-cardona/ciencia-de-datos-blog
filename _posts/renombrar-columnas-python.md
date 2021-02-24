@@ -1,9 +1,9 @@
 ---
-title: 'renombrar columnas '
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-date: '2020-08-08'
-modified_date: '2020-08-08'
-image: /assets/images/posts/random-img.jpg
+title: '¿Cómo renombrar columnas con Python?'
+description: Aprende a renombrar columnas fácilmente usando Python y pandas.
+date: '2021-02-23'
+modified_date: '2021-02-23'
+image: /assets/images/posts/img-1.jpg
 ---
 
 Una de las dudas más comunes cuando comenzamos a utilizar Python (y tal vez pandas) para Ciencia de Datos, es ¿Cómo puedo interactuar con mis datos? ¿como puedo cambiar el nombre de las columnas de un archivo de Excel?
@@ -23,14 +23,17 @@ Comenzaremos creando un set de datos (dataset) que nos servirá como ejemplo
 
 ```py
 autos = {'Marca': ['Honda Civic','Toyota Corolla','Ford Focus','Audi A4'],
-        'Precio': [22000,25000,27000,35000]
+        'Precio': [22000,25000,27000,35000],
+        'Kilometraje': [230,120,34]
         }
 
-df = pd.DataFrame(autos, columns = ['Marca', 'Precio'])
+df = pd.DataFrame(autos, columns = ['Marca', 'Precio','Kilometraje])
 ```
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+Y obtendremos una tabla de forma:
+
+| Marca         | Precio       | Kilometraje     |
+| :-------------|:-------------|:----------------|
+| Honda Civic   | 22000        |             230 |
+| Toyota Corolla| 25000        |             120 |
+| Ford Focus    | 27000        |              34 |

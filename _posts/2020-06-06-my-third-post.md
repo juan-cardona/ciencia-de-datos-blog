@@ -3,7 +3,7 @@ title: 'My third post'
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 date: '2020-06-06'
 modified_date: '2020-06-06'
-image: /assets/images/posts/random-img.jpg
+image: /assets/images/posts/img-6.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
