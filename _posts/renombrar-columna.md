@@ -50,6 +50,7 @@ df.rename(columns = {"Marca":"Marca del Auto"}, inplace = True)
 ```
 
 Lo que nos daría como resultado una tabla de esta forma:
+![image](/assets/images/posts/rename-column-2.png)
 
 ### Para cambiar el nombre de múltiples columnas
 ```py
@@ -57,6 +58,7 @@ df.rename(columns = {"Marca":"Marca del Auto", "Precio":"Precio del Auto"}, inpl
 ```
 
 Lo que nos daría una tabla de la forma:
+![image](/assets/images/posts/rename-column-3.png)
 
 ## Opción 2: Asignar una lista de nombres de columnas
 
@@ -69,4 +71,5 @@ df.columns = ["Marca del Auto", "Precio del Auto", "Kilometraje del Auto"]
 ```
 
 Lo que nos daría una tabla de la forma
+![image](/assets/images/posts/rename-column-4.png)
 
