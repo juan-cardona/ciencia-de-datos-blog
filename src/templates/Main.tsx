@@ -24,17 +24,17 @@ const Main = (props: IMainProps) => (
           <Navbar>
             <li className="mx-6">
               <Link href="/">
-                <a>Home</a>
+                <a>Inicio</a>
               </Link>
             </li>
             <li className="mr-6">
               <Link href="/about/">
-                <a>About</a>
+                <a>Nosotros</a>
               </Link>
             </li>
-            <li className="mr-6">
+            {/* <li className="mr-6">
               <a href="https://github.com/ixartz/Next-js-Blog-Boilerplate">GitHub</a>
-            </li>
+            </li> */}
           </Navbar>
         </div>
       </div>
@@ -47,7 +47,7 @@ const Main = (props: IMainProps) => (
         {new Date().getFullYear()}
         {' '}
         {Config.title}
-        . Powered with
+        . Made with
         {' '}
         <span role="img" aria-label="Love">
           ♥
@@ -55,7 +55,7 @@ const Main = (props: IMainProps) => (
         {' '}
         by
         {' '}
-        <a href="https://creativedesignsguru.com">CreativeDesignsGuru</a>
+        <a href="https://github.com/juan-cardona">Juan José Cardona </a>
         {/*
          * PLEASE READ THIS SECTION
          * We'll really appreciate if you could have a link to our website

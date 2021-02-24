@@ -1,9 +1,9 @@
 export const Config = {
   site_name: 'Starter',
-  title: 'Next.js Boilerplate',
-  description: 'Starter code for your Next.js blog Boilerplate with Tailwind CSS',
+  title: 'Gurú de datos',
+  description: 'Artículos sobre ciencia de datos, aprendizaje de máquinas e ingenieria de datos',
   url: 'https://example.com',
-  locale: 'en',
-  author: 'Anonymous',
+  locale: 'es',
+  author: 'Juan Jose Cardona',
   pagination_size: 5,
 };
