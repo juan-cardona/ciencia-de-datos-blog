@@ -3,7 +3,7 @@ title: '¿Cómo renombrar columnas con Python?'
 description: Aprende a renombrar columnas fácilmente usando Python y pandas.
 date: '2021-02-23'
 modified_date: '2021-02-23'
-image: img-1.jpg
+image: /img-1.jpg
 ---
 
 Una de las dudas más comunes cuando comenzamos a utilizar Python (y tal vez pandas) para Ciencia de Datos, es ¿Cómo puedo interactuar con mis datos? ¿como puedo cambiar el nombre de las columnas de un archivo de Excel?
