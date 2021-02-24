@@ -14,22 +14,22 @@ export type IBlogGalleryProps = {
 
 const BlogGallery = (props: IBlogGalleryProps) => (
   <>
-    <div className="md:grid md:grid-cols-3 gap-6 justify-center items-center">
+    <div className=" ">
       {props.posts.map((elt) => (
-        <li
-          key={elt.slug}
-          className="mb-3 flex flex-col md:m-6 m-12 items-center align-middle justify-center"
-        >
+        <li key={elt.slug} className="mb-3 flex flex-col">
           <Link href="/posts/[slug]" as={`/posts/${elt.slug}`}>
-            <a>
-              <h2 className="flex">{elt.title}</h2>
-              <div className=" md:w-full">
-                <Image src={elt.image} alt="Picture of the author" width={500} height={500} />
+            <div className=" md:grid md:grid-cols-3  gap-6 md:mx-6 mx-12  cursor-pointer items-center align-middle justify-center">
+              <div className="md:col-span-2 md:m-8">
+                <h2 className="flex font-bold text-2xl">{elt.title}</h2>
+                <h3 className="flex text-base">{elt.description}</h3>
+                <div className="text-sm">{format(new Date(elt.date), 'LLL d, yyyy')}</div>
               </div>
-            </a>
-          </Link>
 
-          <div>{format(new Date(elt.date), 'LLL d, yyyy')}</div>
+              <div className=" md:w-full md:mr-8">
+                <Image src={elt.image} alt="Picture of the author" width={500} height={290} />
+              </div>
+            </div>
+          </Link>
         </li>
       ))}
     </div>

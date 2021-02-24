@@ -39,7 +39,7 @@ export const getStaticPaths: GetStaticPaths<IPageUrl> = async () => {
 };
 
 export const getStaticProps: GetStaticProps<IBlogGalleryProps, IPageUrl> = async ({ params }) => {
-  const posts = getAllPosts(['title', 'date', 'slug', 'image']);
+  const posts = getAllPosts(['title', 'description', 'date', 'slug', 'image']);
 
   const pages = convertTo2D(posts, Config.pagination_size);
   const currentPage = Number(params!.page.replace('page', ''));
