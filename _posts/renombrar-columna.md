@@ -3,7 +3,7 @@ title: '¿Cómo renombrar columnas con Python?'
 description: Aprende a renombrar columnas fácilmente usando Python y pandas.
 date: '2021-02-23'
 modified_date: '2021-02-23'
-image: _assets_images_posts_img-1.jpg
+image: img-1.jpg
 ---
 
 Una de las dudas más comunes cuando comenzamos a utilizar Python (y tal vez pandas) para Ciencia de Datos, es ¿Cómo puedo interactuar con mis datos? ¿como puedo cambiar el nombre de las columnas de un archivo de Excel?
@@ -51,14 +51,14 @@ Siguiendo nuestro ejemplo anterior tendríamos:
 
 ### Para cambiar el nombre una sola columna
 ```py
-df.rename(columns = {‘Marca’:‘Marca del Auto’}, inplace = True)
+df.rename(columns = {"Marca":"Marca del Auto"}, inplace = True)
 ```
 
 Lo que nos daría como resultado una tabla de esta forma:
 
 ### Para cambiar el nombre de múltiples columnas
 ```py
-df.rename(columns = {‘Marca’:‘Marca del Auto’, ‘Precio’:’Precio del Auto’}, inplace = True)
+df.rename(columns = {"Marca":"Marca del Auto", "Precio":"Precio del Auto"}, inplace = True)
 ```
 
 Lo que nos daría una tabla de la forma:
@@ -70,7 +70,7 @@ Otra forma de cambiar el nombre de las columnas es asignándoles una lista que c
 Ahora siguiendo nuestro ejemplo anterior tendríamos,
 ### Para cambiar el nombre de todas las columnas usando una lista de nombres 
 ```py
-df.columns = [‘Marca del Auto’, ’Precio del Auto’, ‘Kilometraje del Auto’]
+df.columns = ["Marca del Auto", "Precio del Auto", "Kilometraje del Auto"]
 ```
 
 Lo que nos daría una tabla de la forma
