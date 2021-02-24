@@ -1,4 +1,4 @@
-# ---
+---
 title: '¿Cómo renombrar columnas con Python?'
 description: Aprende a renombrar columnas fácilmente usando Python y pandas.
 date: '2021-02-23'
