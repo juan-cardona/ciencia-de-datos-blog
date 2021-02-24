@@ -27,20 +27,15 @@ Comenzaremos creando un set de datos (dataset) que nos servirá como ejemplo
 ```py
 autos = {'Marca': ['Honda Civic','Toyota Corolla','Ford Focus','Audi A4'],
         'Precio': [22000,25000,27000,35000],
-        'Kilometraje': [230,120,34]
+        'Kilometraje': [230,120,34,24]
         }
 
-df = pd.DataFrame(autos, columns = ['Marca', 'Precio','Kilometraje])
+df = pd.DataFrame(autos, columns = ['Marca', 'Precio','Kilometraje'])
 ```
 
 Y obtendremos una tabla de forma:
 
-| Marca         | Precio       | Kilometraje     |
-| :-------------|:-------------|:----------------|
-| Honda Civic   | 22000        |             230 |
-| Toyota Corolla| 25000        |             120 |
-| Ford Focus    | 27000        |              34 |
-
+![image](/assets/images/posts/rename-column-1.png)
 
 ## Opción 1: usar la función “rename()”
 
